@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TMall.com 文字参考资料一：如何把你的图标转换成web字体</title>
+	<link rel="stylesheet" href="../../css/basic.css">
+	<!--[if lt IE 9]><script src="../../js/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../../css/shCore.css">
+	<link rel="stylesheet" href="../../css/shThemeEclipse.css">
+	<script src="../../js/shCore.js"></script>
+	<script src="../../js/shBrushXml.js"></script>
+<script>SyntaxHighlighter.all();</script>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<h1 class="headerTit">TMall.com 文字工具</h1>
+		</div>
+	</header>
+	<main id="tutorial">
+		<div class="wrapper">
+			<section>
+				<h2 class="articleTitle tac rel"><a class="articleTags abs" href="../../tutorial.html" ><i class="icons icon-mbar">&#xf0060; </i> fonts</a>如何把你的图标转换成web字体 ( <a href="http://www.webdesignerdepot.com/2013/04/how-to-turn-your-icons-into-a-web-font/" target="_blank">How to turn your icons into a web font</a> )</h2>
+				<article>
+					<aside class="arctile-showTime">
+						<div class="arctile-timer">六月六<span class="arctitle-year">2014</span></div>
+						<div class="icon_arrow"></div>
+						<div class="round-dot"></div>
+					</aside>
+					<div class="sourceLink">
+						<a href="http://www.w3cplus.com/css3/how-to-turn-your-icons-into-a-web-font.html" target="_blank" title="原文链接" class="icons icon-chaoshi">&#x3469;</a>
+					</div>
+					
+					<p>在这篇教程中，我们将使用一个免费的Web应用程序<a href="http://icomoon.io/" target="_blank">IcoMoon</a>将矢量图转换成Web字体，然后将生成的字体通过css应用到Web页面中。</p>
+					<p>通常我们在网站中必不可少的会使用到一些小图标。在正常尺寸下，布局看上去一切OK，但当我们将页面进行放大显示后，你会发现icon图标变得有些模糊，而基于文本的标题依然清晰可见。为了适应各种情况，我们有必要试着解决它：</p>
+					<ul class="arctile-list">
+						<li><i class="icons icon-fp">&#x346a;</i><b>解决方案：</b>创建双倍大小的Sprite图，然后通过css样式，设置他们只显示二分之一尺寸。</li>
+						<li><i class="icons icon-fp">&#xe604;</i>虽然这样的方法让他们在Retina屏上显示的大小是正常的，一旦你开始放大屏幕，图标又变得模糊不清，但文本还是一样的清晰。</li>
+						<li><i class="icons icon-mbar">&#xf0144;</i><b>答案很明显</b>，我需要把我的图标变成一个字体。</li>
+					</ul>
+					<figure>
+						<img src="images/before_after.jpg" alt="">
+					</figure>
+					<h3>使用字体图标的优势</h3>
+					<ul class="arctile-list">
+						<li><i class="icons icon-fp">&#x346a;</i><b>适用性：</b>一个图标字体比一系列的图像要小。一旦图标字体加载了，你的图标就会马上渲染出来，不需要下载一个图像。</li>
+						<li><i class="icons icon-fp">&#x346a;</i><b>可扩展性：</b>图标字体可以用font-size属性设置其任何大小。</li>
+						<li><i class="icons icon-fp">&#x346a;</i><b>灵活性：</b>文字效果可以很容易地应用到你的图标上，包括颜色，阴影和翻转等效果。</li>
+						<li><i class="icons icon-fp">&#x346a;</i><b>兼容性：</b>网页字体支持所有现代浏览器(包括IE6)。</li>
+					</ul>
+					<h3>创建一个图标字体</h3>
+					<p>创建字体，我们可以使用一个专业的字体创建应用程序，比如说<a href="http://www.glyphsapp.com/" target="_blank">Glyphs</a>。但目前我们想构建一个简单的图标字体，比如说间距和粗细这样的物理关系并不是非常重要，使用Glyphs是否有点大材小用了。</p>
+					<p>创建一个图标字体，最简单的方法是使用<a href="http://www.open-open.com/news/view/90fc24" target="_blank">Keyamoon</a>制作的一个Web应用程序<a href="http://icomoon.io/" target="_blank">IcoMoon</a>。这个应用程序解决了创建字体文件和如何使用创建的图标字体的一切麻烦。</p>
+					<p><a href="http://icomoon.io/app" target="_blank">IcoMoon</a>附带了大量的图标，你也可以通过图标库添加更多的图标，其中大部分都可以免费使用。你会发现，使用标准的图标比你自己创建的要方便得多。</p>
+					<h3>一起开始吧！</h3>
+					<h4>1、准备你的插图</h4>
+					<p>首先，你需要能创建矢量图标的程序，并且能够找到输出SVG格式，比如“Illustrator”或者“iNkscape”。</p>
+					<p>当你设计的时候，你可以使用任何你喜欢的颜色，但是图标必须是一个纯色。确保每个图标的尺寸大小是相同的。有一个图标更高或者更宽，会很难创建一个一致的字体。在这里，我们不得不减少飞艇图标的宽度，以便它匹配其他图标。</p>
+					<figure>
+						<img src="images/011.jpg" alt="">
+					</figure>
+					<h4>2、清理</h4>
+					<p>仔细检查每一个图标，以确保它没有缺陷——细节在小尺寸上是完美的，当你放大的时候小的缺陷就能被发现。</p>
+					<p>在所示图标，我需要删除参差不齐的路径。</p>
+					<p>Illustrator中，使用Pathfinder工具统一层叠元素，减去前面元素，比如这些图标中的星星图标。关键的原则是确保你的图标是可读的小尺寸。</p>
+					<figure>
+						<img src="images/021.jpg" alt="">
+					</figure>
+					<h4>3、导成svg</h4>
+					<p>现在，选择一个图标，并将它复制粘贴到一个新的文档场景中（例如200px * 200px）。你可能会发现它有一个基线尺寸的设置。使用彩色的图标，比如说在白色的背景中使用黑色的图标。</p>
+					<p>现在，选择菜单“文件”中“保存”，并选择将文件保存成“SVG”格式。使用默认的SVG设置。一旦你这样做，所有的图标，你可以创建一个Web字体。</p>
+					<figure>
+						<img src="images/031.jpg" alt="">
+					</figure>
+					<h4>4、导入到IcoMoon</h4>
+					<p>打开<a href="http://icomoon.io/app" target="_blank">IcoMoon Web app</a>,导入一个图标(SVG格式哦)，点击“Imort icons”按钮，然后选择您想要添加的SVG文件——您也可以一次添加多个文件。这些图标将会出现在“Your Custom Icons”区域中。如果他们是高亮的黄色显示，表示这些图标是你将要创建的图标字体。在这个例子中，你可以看到，我不仅导出我自己创建的图标，我还在“Mini-icons”中添加了别的图标。</p>
+					<figure>
+						<img src="images/041.jpg" alt="">
+					</figure>
+					<h4>5、从IcoMoon中导出字体</h4>
+					<p>如果你想调整图标的位置、大小或旋转，你可以点击“Edit”按钮，也可以使用“Save Copy”按钮来创建图片的变化。添加一个有意义的图标标记，因为这将被用来生成类名。</p>
+					<p>当你都准备好了，点击屏幕底部的“Font”按钮开始生成字体。这样你就可以指定哪个图标映射到哪个字符上，例如，如果你要设置一套六个旋转的球，你可以每这六个球分别指定字符：q、w、e、r、t和y。你也可以根据你自己的爱好选择一个字体的名字。你也可以调整字体的指标，除非你要设置你息定的字体和标准文本，不然你真的不需要担心这个。</p>
+					<figure>
+						<img src="images/051.jpg" alt="">
+					</figure>
+					<h4>6、下载字体文件</h4>
+					<p>单击“Download”下载字体包到你的电脑上。他有一个字文件夹包含了字体本身（woff,eot,ttf格式），以及一个HTML示例页面和相应的CSS。甚至还有一个javascript文件和一个解决方法，如果你需要支持IE或IE7。</p>
+					<p>将font文件夹复制到你的网站，为你的项目添加字体。你需要从style.css文件中复制CSS样式，并粘贴到你网站的CSS文件中，但是我的方法是将它重命名为font.css，并保持他作为一个单独的CSS文件。你需要的时候在把这个CSS文件引入到你的HTML中。</p>
+					<pre class="brush: html;">
+						&lt;link rel="stylesheet" href="fonts.css"&gt;
+					</pre>
+					<p>在CSS文件中你可以找到@font-face，你需要将URL路径修改成你本地的相对路径，或者你可以简单地把字体文件和你的样式放在同一个文件夹。</p>
+					<figure>
+						<img src="images/061.jpg" alt="">
+					</figure>
+					<h4>7、调用字体</h4>
+					<p>正如你看到的样本文件index.html，有两种方法可以调用，一种是通字符（unicod或名称），另一种是通过类名。第一个例子使用了HTML5的data-icon自定义属性。</p>
+					<pre class="brush: html">
+						&lt;i class="icons icon-ui"&gt; &amp;#x343a; &lt;i&gt;
+					</pre>
+				</article>
+			</section>
+		</div>
+	</main>
+	
+	<footer class="wrapper">
+		<section class="copyright">
+			<article>来源：<a href="http://www.tmall.com" target="_blank">www.tmall.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;整理：yong Lei</article>
+		</section>
+	</footer>
+
+	<nav class="floatNav">
+		<a class="navTitle" href="javascript:void(0);">导航</a>
+		<a href="../../index.html">使用方法</a>
+		<a href="../../readme.html">代码速查</a>
+		<a href="../../tutorial.html">参考资料</a>
+		<a href="../../tools.html">工具</a>
+	</nav>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>天猫字体 使用</title>
+	<link rel="stylesheet" href="css/basic.css">
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="css/shCore.css">
+	<link rel="stylesheet" href="css/shThemeEclipse.css">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script>SyntaxHighlighter.all();</script>
+	<style>
+		.indexShowIcons{
+			margin-top: 10px;
+		}
+		@font-face{
+			font-family:mui-global-iconfont;
+			src:url(fonts/mui-global-iconfont/font_1401963178_8135476.eot);
+			src:url(fonts/mui-global-iconfont/font_1401963178_8135476.eot?#iefix) format('embedded-opentype'),
+			    url(fonts/mui-global-iconfont/font_1401963178_8135476.woff) format('woff'),
+			    url(fonts/mui-global-iconfont/font_1401963178_8135476.ttf) format('truetype'),
+			    url(fonts/mui-global-iconfont/font_1401963178_8135476.svg#iconfont) format('svg')
+			}
+		.icon-ui{
+			font-family: mui-global-iconfont !important;
+			font-size: 22px;
+			color: #c40000;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<h1 class="headerTit">TMall.com 字体使用方法</h1>
+		</div>
+	</header>
+	<main>
+		<div class="wrapper">
+			<section>
+				<article>
+					<h2>HTML结构：</h2>
+					<pre class="brush: html;">
+						&lt;i class="icons icon-ui"&gt; &amp;#x343a; &lt;i&gt;
+						&lt;i class="icons icon-ui"&gt; &amp;#x3448; &lt;i&gt;
+						&lt;i class="icons icon-ui"&gt; &amp;#x3449; &lt;i&gt;
+						&lt;i class="icons icon-ui"&gt; &amp;#xf012b; &lt;i&gt;
+						&lt;i class="icons icon-ui"&gt; &amp;#xf0148; &lt;i&gt;
+					</pre>
+				</article>
+				<article></article>
+					<h2>CSS样式：</h2>
+					<pre class="brush: css;">
+						/* here is icons basic style */
+						.icons{
+							display:inline-block;*display:inline;*zoom:1;
+							font-style: normal;
+						}
+						
+						/* you can use css3's @font-face property to set yourself web font */
+						@font-face{
+							font-family: mui-global-iconfont;
+							src:url(fonts/font_icons_ui.eot);                                       /* IE9*/
+							src:url(fonts/font_icons_ui.eot?#iefix) format('embedded-opentype'),    /* IE6-IE8 */
+							    url(fonts/font_icons_ui.woff) format('woff'),           /* chrome、firefox */
+							    url(fonts/font_icons_ui.ttf) format('truetype'),        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+							    url(fonts/font_icons_ui.svg#iconfont) format('svg')     /* iOS 4.1- */
+							}
+						.icon-ui{
+							font-family: mui-global-iconfont !important;
+							font-size: 22px;
+							color: #c40000;
+						}
+					</pre>
+				</article>
+				<article>
+					<h2>UI显示：</h2>
+					<table class="indexShowIcons">
+						<tr>
+							<th><i class="icons icon-ui">&#x343a;</i></th>
+							<th><i class="icons icon-ui">&#x3448;</i></th>
+							<th><i class="icons icon-ui">&#x3449;</i></th>
+							<th><i class="icons icon-ui">&#xf012b;</i></th>
+							<th><i class="icons icon-ui">&#xf0148;</i></th>
+						</tr>
+					</table>
+				</article>
+			</section>
+		</div>
+	</main>
+	<footer class="wrapper">
+		<section class="copyright">
+			<article>来源：<a href="http://www.tmall.com" target="_blank">www.tmall.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;整理：yong Lei</article>
+		</section>
+	</footer>
+
+	<nav class="floatNav">
+		<a class="navTitle" href="javascript:void(0);">导航</a>
+		<a href="index.html">使用方法</a>
+		<a href="readme.html">代码速查</a>
+		<a href="tutorial.html">参考资料</a>
+		<a href="tools.html">工具</a>
+	</nav>
+</body>
+</html>
