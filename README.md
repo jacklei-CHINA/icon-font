@@ -28,7 +28,7 @@ icon-font
 <i class="icon-ui">&#xe602;</i>
 <i class="icon-ui">&#xe603;</i>
 <i class="icon-ui">&#xe604;</i>
-
+```
 
 ```css
 @font-face {
@@ -54,6 +54,7 @@ icon-ui {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+```
 
 二、class名称
 ```html
@@ -62,3 +63,4 @@ icon-ui {
 <i class="icon-IE"> </i>
 <i class="icon-opera"> </i>
 <i class="icon-safari"> </i>
+```
