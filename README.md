@@ -22,14 +22,15 @@ icon-font
 下面我们来展示两种用字体在网页中画小图标的方法：<br>
 
 一、HTML实体
-`
+```html
 <i class="icon-ui">&#xe600;</i>
 <i class="icon-ui">&#xe601;</i>
 <i class="icon-ui">&#xe602;</i>
 <i class="icon-ui">&#xe603;</i>
-<i class="icon-ui">&#xe604;</i>`
+<i class="icon-ui">&#xe604;</i>
 
-`css
+
+```css
 @font-face {
   font-family: 'icon-font';
 	src:url('fonts/icomoon.eot');
@@ -52,7 +53,7 @@ icon-ui {
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}`
+}
 
 二、class名称
 ```html
