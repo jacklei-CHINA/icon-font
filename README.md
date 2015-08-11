@@ -12,6 +12,8 @@ icon-font
    
 ### 你能学到什么？
 > eot、woff、ttf、svg字体格式<br>
+> @font-face、font-family字体相关属性<br>
+> :before伪元素，content属性<br>
 > 使用IcoMoon App管理字体图标<br>
 > 在网页中用字体画小图标<br>
 > 轻松改变图标大小及颜色等CSS属性，就像操作文本一样简单。
