@@ -19,6 +19,7 @@ icon-font
 
 ## 代码演示
 下面我们来展示两种用字体在网页中画小图标的方法：<br>
+![github](https://github.com/hash-lee/icon-font/blob/master/images/show.jpg "github")
 
 ### 一、HTML实体
 * HTML结构部分
