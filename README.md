@@ -97,7 +97,7 @@ icon-font
 
 ```
 
-# 视频教程 
+## 视频教程 
 《[用字体在网页中画Icon小图标](http://www.imooc.com/view/243)》
 
 # 总结
