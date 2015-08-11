@@ -22,6 +22,7 @@ icon-font
 下面我们来展示两种用字体在网页中画小图标的方法：<br>
 
 一、HTML实体
+* HTML结构部分
 ```html
 <i class="icon-ui">&#xe600;</i>
 <i class="icon-ui">&#xe601;</i>
@@ -30,6 +31,7 @@ icon-font
 <i class="icon-ui">&#xe604;</i>
 ```
 
+* CSS样式部分
 ```css
 @font-face {
   font-family: 'icon-font';
@@ -57,10 +59,53 @@ icon-ui {
 ```
 
 二、class名称
+* HTML结构部分
 ```html
 <i class="icon-chrome"> </i>
 <i class="icon-firefox"> </i>
 <i class="icon-IE"> </i>
 <i class="icon-opera"> </i>
 <i class="icon-safari"> </i>
+```
+* CSS样式部分
+```css
+@font-face {
+  font-family: 'icon-font';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icon-font';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-chrome:before {
+	content: "\e600";
+}
+.icon-firefox:before {
+	content: "\e601";
+}
+.icon-IE:before {
+	content: "\e602";
+}
+.icon-opera:before {
+	content: "\e603";
+}
+.icon-safari:before {
+	content: "\e604";
+}
+
 ```
