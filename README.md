@@ -20,8 +20,8 @@ icon-font
 代码演示
 -----
 ```html
-		<i class="icon-ui">&#xe600;</i>
-		<i class="icon-ui">&#xe601;</i>
-		<i class="icon-ui">&#xe602;</i>
-		<i class="icon-ui">&#xe603;</i>
-		<i class="icon-ui">&#xe604;</i>
+<i class="icon-ui">&#xe600;</i>
+<i class="icon-ui">&#xe601;</i>
+<i class="icon-ui">&#xe602;</i>
+<i class="icon-ui">&#xe603;</i>
+<i class="icon-ui">&#xe604;</i>
