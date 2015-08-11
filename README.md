@@ -43,7 +43,7 @@ icon-font
 	font-weight: normal;
 	font-style: normal;
 }
-icon-ui {
+.icon-ui {
 	font-family: 'icon-font';
 	speak: none;
 	font-style: normal;
@@ -51,7 +51,6 @@ icon-ui {
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -87,25 +86,14 @@ icon-ui {
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-.icon-chrome:before {
-	content: "\e600";
-}
-.icon-firefox:before {
-	content: "\e601";
-}
-.icon-IE:before {
-	content: "\e602";
-}
-.icon-opera:before {
-	content: "\e603";
-}
-.icon-safari:before {
-	content: "\e604";
-}
+.icon-chrome:before  { content: "\e600"; }
+.icon-firefox:before { content: "\e601"; }
+.icon-IE:before      { content: "\e602"; }
+.icon-opera:before   { content: "\e603"; }
+.icon-safari:before  { content: "\e604"; }
 
 ```
