@@ -17,3 +17,10 @@ icon-font
 > 使用IcoMoon App管理字体图标<br>
 > 轻松改变图标大小及颜色等CSS属性，就像操作文本一样简单。
 
+代码演示
+-----
+		<i class="icon-ui">&#xe600;</i>
+		<i class="icon-ui">&#xe601;</i>
+		<i class="icon-ui">&#xe602;</i>
+		<i class="icon-ui">&#xe603;</i>
+		<i class="icon-ui">&#xe604;</i>
