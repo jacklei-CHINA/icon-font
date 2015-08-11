@@ -17,11 +17,11 @@ icon-font
 > 使用IcoMoon App管理字体图标<br>
 > 轻松改变图标大小及颜色等CSS属性，就像操作文本一样简单。
 
-代码演示
+## 代码演示
 -----
 下面我们来展示两种用字体在网页中画小图标的方法：<br>
 
-一、HTML实体
+### 一、HTML实体
 * HTML结构部分
 ```html
 <i class="icon-ui">&#xe600;</i>
@@ -57,7 +57,7 @@ icon-font
 }
 ```
 
-二、class名称
+### 二、class名称
 * HTML结构部分
 ```html
 <i class="icon-chrome"> </i>
