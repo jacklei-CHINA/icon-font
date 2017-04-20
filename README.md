@@ -67,6 +67,7 @@ icon-font
 <i class="icon-opera"> </i>
 <i class="icon-safari"> </i>
 ```
+
 * CSS样式部分
 ```css
 @font-face {
@@ -96,7 +97,6 @@ icon-font
 .icon-IE:before      { content: "\e602"; }
 .icon-opera:before   { content: "\e603"; }
 .icon-safari:before  { content: "\e604"; }
-
 ```
 
 ## 视频教程 
